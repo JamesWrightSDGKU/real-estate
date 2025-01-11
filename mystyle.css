@@ -1,0 +1,31 @@
+/*global*/
+
+a{
+    text-decoration: none;
+}
+
+/*utilities*/
+
+/*header*/
+
+.primary-header{
+    text-align: start; 
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+/*main*/
+
+/*index*/
+
+/*about*/
+
+/*blog*/
+
+/*contact*/
+
+/*footer*/
