@@ -3,42 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-    <title>RealEstate</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Real Estate</title>
 </head>
 <body>
-    <header class="site-header">
-        <h1><a href="index.html">RealEstate</a></h1>
-        <div class="menu-bar">
-            <h4><a href="about.html">About</a></h4>
-            <h4><a href="blog.html">Blog</a></h4>
-            <h4><a href="contact.html">Contact</a></h4>
+    <header class="header-style">
+        <div class="title-bar">
+            <h1>RealEstate</h1>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-            <p>We sell luxury houses, condominiums, and penthouses</p>        
-    </header>
-
+        <h2>We sell luxury houses, condominiums, and penthouses</h2>        
+    </header> 
     
-    <main class="container flex-container column-container">
-        <div>
-            <h2>More about us</h2>
-        </div>
-        <div>
-            <img src="img/icon1.svg" alt="image of padlock">      
-            <h3>Security</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
-        </div>
-        <div>
-            <img src="img/icon2.svg" alt="image of padlock">      
-            <h3>Prices</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
-        </div>
-        <div>
-            <img src="img/icon3.svg" alt="image of padlock">      
-            <h3>Time</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
-        </div>        
+    <main class="container">
+        <h1>Trust Us</h1>
+        <section class="primary-flex-container">
+            <div>
+                <img src="image/icon1.svg" alt="image of padlock">      
+                <h2>Security</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
+            </div>
+            <div>
+                <img src="image/icon2.svg" alt="image of padlock">      
+                <h2>Prices</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
+            </div>
+            <div>
+                <img src="image/icon3.svg" alt="image of padlock">      
+                <h2>Time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius explicabo animi sunt ipsa, quidem porro eaque iure, quibusdam, impedit doloremque cupiditate. Unde, natus sint! Debitis cumque perferendis nulla ad?</p>
+            </div>
+        </section>  
+        <h1>Recent Listings</h1>      
+        <section class="primary-flex-container">
+            <div class="listing-item">
+                <img src="image/announcement1.jpg" alt="two-story house on a lake with mountains in the background">
+                <div class="container">
+                    <h2>Mansion on the Lake</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, magnam officia. Sit?</p>
+                    <div class="listing-detail">
+                        <p>$ 2,985,095</p>
+                    </div>
+                    <ul class="listing-detail amenities">
+                        <li>
+                            <img src="image/icon_parking.svg" alt="car">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_room.svg" alt="bed">
+                            <p>4</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_wc.svg" alt="toilet">
+                            <p>3</p>
+                        </li>
+                    </ul>
+                    <button>See Details</button>
+                </div>
+            </div>             
+            <div class="listing-item">
+                <img src="image/announcement2.jpg" alt="modern two-store luxury house">
+                <div class="container">
+                    <h2>Modern Luxury</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, magnam officia. Sit?</p>
+                    <div class="listing-detail">
+                        <p>$ 3,000,000</p>
+                    </div>
+                    <ul class="listing-detail amenities">
+                        <li>
+                            <img src="image/icon_parking.svg" alt="car">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_room.svg" alt="bed">
+                            <p>4</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_wc.svg" alt="toilet">
+                            <p>3</p>
+                        </li>
+                    </ul>
+                    <button>See Details</button>
+                </div>   
+            </div>             
+            <div class="listing-item">
+                <img src="image/announcement3.jpg" alt="two-story luxury lodge with pool in foreground">
+                <div class="container">
+                    <h2>Grand Mountain Lodge</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, magnam officia. Sit?</p>
+                    <div class="listing-detail">
+                        <p>$ 4,385,995</p>
+                    </div>
+                    <ul class="listing-detail amenities">
+                        <li>
+                            <img src="image/icon_parking.svg" alt="car">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_room.svg" alt="bed">
+                            <p>4</p>
+                        </li>
+                        <li>
+                            <img src="image/icon_wc.svg" alt="toilet">
+                            <p>3</p>
+                        </li>
+                    </ul>
+                    <button>See Details</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
-
     
     <footer>  
         
