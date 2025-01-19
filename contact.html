@@ -3,28 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Real Estate</title>
 </head>
 <body>
-    <header class="site-header">
-        <h1><a href="index.html">RealEstate</a></h1>
-        <div class="menu-bar">
-            <h4><a href="index.html">Home</a></h4>
-            <h4><a href="about.html">About</a></h4>
-            <h4><a href="blog.html">Blog</a></h4>
-        </div>
-            <p>We sell luxury houses, condominiums, and penthouses</p>        
-    </header>
+    <header class="secondary-header">
+        <div class="title-bar">
+            <h1><a href="index.html">RealEstate</a></h1>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>  
+    </header> 
 
     
-    <main>
-        
+    <main class="container">
+        <div class="contact-text">
+            <h2>Contact</h2>
+            <p>Please fill in the information below</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempore blanditiis nesciunt odio repellendus nobis impedit ipsam laborum ipsa. Voluptatum vero necessitatibus velit culpa.<i class="fa-solid fa-circle-info"></i></p>
+        </div>
+        <form class="contact-form">
+            <fieldset>
+                <legend>Personal information</legend>
+                    <div class="form-control">
+                        <label for="name">Name:</label>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone-number">Phone number:</label>
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message:</label>
+                        <textarea placeholder="Please type your message here"></textarea>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Property Information</legend>
+                    <div class="contact-info">
+                        <div>
+                            <label for="property-type">Property Type</label>
+                            <select id="property-type" name="property-type">
+                                <option value="house">House</option>
+                                <option value="townhome">Townhome</option>
+                                <option value="multi-family">Multi-Family</option>
+                                <option value="condo-co-op">Condo/Co-Op</option>
+                                <option value="lot-land">Lot/Land</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="manufactured">Manufactured</option>
+                            </select>
+                        </div>
+                        <div class="contact-info">
+                            <label for="listing-number">Listing Number</label>
+                            <input
+                                type="text" 
+                                placeholder="10-digit Listing Number"
+                                pattern="[0-9]"
+                                minlength="10"
+                                maxlength="10"
+                                />
+                        </div>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>How should we reach you?</legend>
+                    <legend>Preferred contact method:</legend>
+                        <div class="contact-info">
+                            <div>
+                                <label for="phone">Phone</label>
+                                <input
+                                    type="radio" 
+                                    id="phone" 
+                                    name="contact-method" 
+                                    value="phone"/>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input
+                                    type="radio" 
+                                    id="email" 
+                                    name="contact-method" 
+                                    value="email">
+                            </div>
+                        </div>
+                    <legend>Availability:</legend>
+                    <div class="contact-info">
+                            <div>
+                                <label for="preferred-initial-contact-date">Date:</label>
+                                <input type="date" id="preferred-initial-contact-date"> 
+                            </div>
+                            <div>
+                                <label for="contact-start-time">between</label>
+                                <input type="time" id="contact-start-time">
+                            </div>
+                            <div>
+                                <label for="contact-end-time">and</label>
+                                <input type="time" id="contact-end-time">
+                            </div> 
+                        </div>
+            </fieldset>
+        </form>
     </main>
 
     
     <footer>
-        
+        <div>
+            <p>Powered by <span><a href="https://zillow.com">Zillow</a></span></p>
+        </div>
+        <div>
+            <p>Copyright &copy; 2025 | <span>Privacy Policy</span></p>
+        </div>
+        <div class="social-links">
+            <label><a href="https://facebook.com" aria-label="Link to Facebook"><i class="fa-brands fa-facebook"></i></a></label>
+            <label><a href="https://linkedin.com" aria-label="Link to Linkedin"><i class="fa-brands fa-linkedin"></i></a></label>
+            <label><a href="https://instagram.com" aria-label="Link to Instagram"><i class="fa-brands fa-square-instagram"></i></a></label>
+        </div>        
     </footer>
 </body>
 </html>
