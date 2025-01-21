@@ -1,53 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <meta name="author" content="James Wright">
+    <meta 
+        name="description" 
+        content="This page is part of a website used to show competency in the HTML and CSS modules of the SDGKU Full-Stack Development - Immersive bootcamp">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Real Estate</title>
+    <title>RealEstate - Contact Us</title>
 </head>
 <body>
     <header class="secondary-header">
+        <div id="skiptocontent">
+            <a href="#main-content">Skip to main content</a>
+        </div>
         <div class="title-bar">
             <h1><a href="index.html">RealEstate</a></h1>
             <nav>
                 <a href="about.html">About</a>
                 <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                Contact
             </nav>
         </div>  
     </header> 
 
     
-    <main class="container">
+    <main class="container" id="main-content">
         <div class="contact-text">
-            <h2>Contact</h2>
+            <h1>Contact Us</h1>
             <p>Please fill in the information below</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempore blanditiis nesciunt odio repellendus nobis impedit ipsam laborum ipsa. Voluptatum vero necessitatibus velit culpa.<i class="fa-solid fa-circle-info"></i></p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempore blanditiis nesciunt odio repellendus nobis impedit ipsam laborum ipsa. Voluptatum vero necessitatibus velit culpa.<i class="fa-solid fa-circle-info"></i>
+            </p>
         </div>
         <form class="contact-form">
             <fieldset>
                 <legend>Personal information</legend>
                     <div class="form-control">
                         <label for="name">Name:</label>
-                        <input type="text" placeholder="Name">
+                        <input type="text" id="name" placeholder="Name">
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email">
                     </div>
                     <div class="form-control">
                         <label for="phone-number">Phone number:</label>
-                        <input type="tel" placeholder="Phone Number">
+                        <input type="tel" id="phone-number" placeholder="Phone Number">
                     </div>
                     <div class="form-control">
                         <label for="message">Message:</label>
-                        <textarea placeholder="Please type your message here"></textarea>
+                        <textarea id="message" placeholder="Please type your message here"></textarea>
                     </div>
             </fieldset>
             <fieldset>
@@ -65,41 +74,46 @@
                                 <option value="manufactured">Manufactured</option>
                             </select>
                         </div>
-                        <div class="contact-info">
+                        <div>
                             <label for="listing-number">Listing Number</label>
                             <input
-                                type="text" 
+                                type="text"
+                                id="listing-number"
                                 placeholder="10-digit Listing Number"
                                 pattern="[0-9]"
                                 minlength="10"
                                 maxlength="10"
-                                />
+                            >
                         </div>
                     </div>
             </fieldset>
             <fieldset>
                 <legend>How should we reach you?</legend>
-                    <legend>Preferred contact method:</legend>
+                    <fieldset class="inner-fieldset">
+                        <legend>Preferred contact method:</legend>
                         <div class="contact-info">
                             <div>
-                                <label for="phone">Phone</label>
+                                <label for="contact-by-phone">Phone</label>
                                 <input
                                     type="radio" 
-                                    id="phone" 
+                                    id="contact-by-phone" 
                                     name="contact-method" 
-                                    value="phone"/>
+                                    value="phone"
+                                >
                             </div>
                             <div>
-                                <label for="email">Email</label>
+                                <label for="contact-by-email">Email</label>
                                 <input
                                     type="radio" 
-                                    id="email" 
+                                    id="contact-by-email" 
                                     name="contact-method" 
                                     value="email">
                             </div>
                         </div>
-                    <legend>Availability:</legend>
-                    <div class="contact-info">
+                    </fieldset>
+                    <fieldset class="inner-fieldset">
+                        <legend>Availability:</legend>
+                        <div class="contact-info">
                             <div>
                                 <label for="preferred-initial-contact-date">Date:</label>
                                 <input type="date" id="preferred-initial-contact-date"> 
@@ -113,7 +127,9 @@
                                 <input type="time" id="contact-end-time">
                             </div> 
                         </div>
+                    </fieldset>
             </fieldset>
+            <input type="submit" value="Submit">
         </form>
     </main>
 
@@ -126,9 +142,9 @@
             <p>Copyright &copy; 2025 | <span>Privacy Policy</span></p>
         </div>
         <div class="social-links">
-            <label><a href="https://facebook.com" aria-label="Link to Facebook"><i class="fa-brands fa-facebook"></i></a></label>
-            <label><a href="https://linkedin.com" aria-label="Link to Linkedin"><i class="fa-brands fa-linkedin"></i></a></label>
-            <label><a href="https://instagram.com" aria-label="Link to Instagram"><i class="fa-brands fa-square-instagram"></i></a></label>
+            <label><a href="https://facebook.com" aria-label="Link to Facebook"><i class="fa-brands fa-facebook fa-xl"></i></a></label>
+            <label><a href="https://linkedin.com" aria-label="Link to Linkedin"><i class="fa-brands fa-linkedin fa-xl"></i></a></label>
+            <label><a href="https://instagram.com" aria-label="Link to Instagram"><i class="fa-brands fa-square-instagram fa-xl"></i></a></label>
         </div>        
     </footer>
 </body>

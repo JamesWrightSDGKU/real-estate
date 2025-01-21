@@ -1,6 +1,6 @@
 "# realEstate" 
 
-# Color palette reference
+## Color palette reference
 
 - 757780 Gray
 - D2CCA1 Sage
